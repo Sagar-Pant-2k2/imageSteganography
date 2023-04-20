@@ -1,0 +1,76 @@
+body {
+    background-color:  #1D1F21;;
+    color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.hidden {
+    display: none;
+}
+.originalImage {
+    height: 300px;
+    width: 300px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    border: #bac4ce00 solid;
+    background-color: rgba(127, 255, 212, 0);
+}
+.imageCanvas {
+    background-color: aliceblue;
+}
+canvas{
+    width: 300px;
+    height: 300px;
+}
+.result {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.cols{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+@media screen and (max-width: 650px) {
+    .result{
+        /* display: flex; */
+        flex-direction: column;
+    }
+}
+/* img{
+    width: 300px;
+    height: 300px;
+} */
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+    margin:10px;
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+.data-extracted {
+    /* display: flex; */
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between	;
+    
+}
+
