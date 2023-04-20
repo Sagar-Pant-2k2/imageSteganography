@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+		
+</head>
+<body>
+	<h1>Steganography Project</h1>
+	<h2>Enter text to hide in image  </h2>
+	<!-- <input type="text" placeholder="enter text" class="content"> -->
+	<textarea rows="4" cols="40" class="content" placeholder="Enter text to hide" style="resize: none;"></textarea>
+	
+	<h2>
+		<label for="files" class="labelFiles">Choose File : </label>
+		<!-- <h3 class="alert">pls upload jpg/png only</h3> -->
+		<input type="file" id="files" accept="image/*"  placeholder="hell"/>
+	</h2>
+	<!-- <img src="" class="hidden originalImage"> -->
+	<div class="options">
+		<button class="encrypt"><h2>Hide the message</h2></button>
+	<button class="extract"><h2>Extract message</h2></button>
+
+	</div>
+
+	<!-- part for encryption -->
+	<div class="result">
+		<div class="cols">
+			<h2>Before Modification</h2>
+			<img src="" class="originalImage">
+		</div>
+		<div class="cols">
+			<h2>After Modification</h2>
+			<canvas id="imageCanvas" ></canvas>
+		</div>
+	</div>
+	<button class="download hidden" href="" download><h2>DOWNLOAD</h2></button>
+	
+	<!-- part for data extraction -->
+	<div class="data-extracted hidden">
+		<h2>Selected image</h2>
+		<canvas id="imageCanvas2" ></canvas>
+		<h2>Hidden data</h2>
+		<div class="notice" style="color:red; display:none">
+			no hidden data
+		</div>
+		<textarea rows="4" cols="40" class="extracted-item" placeholder="hidden data" style="resize: none;"></textarea>
+	</div>
+
+	
+
+	<script src="main.js"></script>
+
+</body>
+</html>
