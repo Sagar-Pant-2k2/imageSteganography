@@ -1,6 +1,6 @@
 # imageSteganography Project
 
-i recently learnt about,i found it really interesting so i tried to implement it
+i recently learnt about steganography,i found it really interesting so i tried to implement it.
 
 # LSB Steganography
 
