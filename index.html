@@ -10,6 +10,20 @@
 </head>
 <body>
 	<h1>Steganography Project</h1>
+	<hr width="100%">
+	<h3>
+		
+				Steganography is the practice of representing information within another message or physical object, in such a manner that the presence of the information is not evident to human inspection.
+				<br><br>
+				Image Steganography – As the name suggests, Image Steganography refers to the process of hiding data within an image file. The image selected for this purpose is called the cover image and the image obtained after steganography is called the stego image. 
+				<br><br>
+				I've manipulated the last two bits of each image pixel channels to store data by doing this we can store one character per pixel.
+				This technique is variation of <a href="https://www.youtube.com/watch?v=TWEXCYQKyDc" target="_blank">LSB</a>
+
+				<br><br> 
+				you can also read the documentation here => <a href="https://github.com/Sagar-Pant-2k2/imageSteganography" target="_blank" ><b><i>Documentaion</i></b></a>
+	</h3>
+	<hr width="100%">
 	<h2>Enter text to hide in image  </h2>
 	<!-- <input type="text" placeholder="enter text" class="content"> -->
 	<textarea rows="4" cols="40" class="content" placeholder="Enter text to hide" style="resize: none;"></textarea>
@@ -45,7 +59,7 @@
 		<canvas id="imageCanvas2" ></canvas>
 		<h2>Hidden data</h2>
 		<div class="notice" style="color:red; display:none">
-			no hidden data
+			no hidden data / (make sure you are using the downloded file for extraction)
 		</div>
 		<textarea rows="4" cols="40" class="extracted-item" placeholder="hidden data" style="resize: none;"></textarea>
 	</div>
@@ -53,6 +67,6 @@
 	
 
 	<script src="main.js"></script>
-
+	
 </body>
 </html>
